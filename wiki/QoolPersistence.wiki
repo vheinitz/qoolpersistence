@@ -41,7 +41,8 @@ Test_Persistence::Test_Persistence(QWidget *parent) :
     ui(new Ui::Test_Persistence)
 {
     ui->setupUi(this);
-    PERSISTENT("MyGeometry", this, "geometry");
+                                                // 3. Declare properties as persistent
+    PERSISTENT("MyGeometry", this, "geometry");  
     PERSISTENT("MyText", ui->lineEdit, "text");
     PERSISTENT("MyCurrentIndex", ui->comboBox, "currentIndex");
     PERSISTENT("CB1", ui->checkBox1, "checked");
