@@ -1,4 +1,3 @@
-# Using QoolPersistence in your projects.
 
 = Introduction =
 
