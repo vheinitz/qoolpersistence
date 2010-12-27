@@ -1,0 +1,19 @@
+#Using QoolPersistence in your projects.
+
+= Introduction =
+
+It is nice, to see your application at the position/size as used last time or to have e.g. last used file loaded on a new start. Unfortunately many small application - some prototypes or internal tools - rarely offer such basic features. The reason often is the lack of time to implement such "nice-to have" stuff. This framework helps to use persistency with very minimal implementation-overhead.
+
+
+= Details =
+QoolPersistence consists of one singleton class Persistence. This singleton class keeps the record of instances having persistent data. On the start-up of application the persistent data is assigned to these instances and on the application exit the data is stored using Qt class QSettings. The instances having persistent data could be an integer, a QString or a QObject. In last case a persistent value is asigned to a property of the QObject.
+
+= Example =
+The directory test contains an example application which utilizes the persistence feature.
+
+
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
